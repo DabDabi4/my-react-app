@@ -1,0 +1,42 @@
+.video-container {
+    position: relative;
+    /* Відносне позиціонування контейнера */
+    width: 640px;
+    /* Ширина відео */
+    height: 480px;
+    /* Висота відео */
+    margin: 0 auto;
+    /* Центрування контейнера по горизонталі (необов'язково) */
+}
+
+video {
+    width: 100%;
+    /* Відео займає всю ширину контейнера */
+    height: 100%;
+    /* Відео займає всю висоту контейнера */
+    display: block;
+    background-image: url(./assets/wallpaper.png);
+
+}
+
+.videoButton {
+    position: absolute;
+    /* Абсолютне позиціонування відносно контейнера */
+    bottom: 20px;
+    /* Відступ від нижнього краю відео */
+    right: 20px;
+    /* Відступ від правого краю відео */
+    z-index: 10;
+    /* Забезпечує видимість кнопки над відео */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Напівпрозорий фон */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.videoButton:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* Твердий білий фон при наведенні */
+}
